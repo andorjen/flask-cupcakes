@@ -13,6 +13,14 @@ connect_db(app)
 db.create_all()
 
 
+@app.get('/')
+def show_home_page():
+    """return html of home page with form and cupcake list space"""
+    return render_template("cupcakes.html")
+
+
+#############################################################################
+# API ROUTES
 @app.get('/api/cupcakes')
 def list_all_cupcakes():
     """return JSON {"cupcakes": [{id, flavor, size, rating, image}, ...]}"""
