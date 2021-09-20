@@ -130,7 +130,8 @@ class CupcakeViewsTestCase(TestCase):
             })
 
         # test patching cupcake id not valid, should get response code 404
-            resp2 = client.patch('/api/cupcakes/100', json=CUPCAKE_PATCH_DATA)
+            resp2 = client.patch('/api/cupcakes/100000',
+                                 json=CUPCAKE_PATCH_DATA)
             self.assertEqual(resp2.status_code, 404)
 
     def test_delete_cupcake(self):
@@ -140,5 +141,5 @@ class CupcakeViewsTestCase(TestCase):
             data = resp.json
             self.assertEqual(data, {"deleted": self.cupcake.id})
 
-            resp2 = client.delete('/api/cupcakes/100')
+            resp2 = client.delete('/api/cupcakes/100000')
             self.assertEqual(resp2.status_code, 404)
