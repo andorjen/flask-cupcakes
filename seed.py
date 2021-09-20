@@ -1,5 +1,5 @@
 # noinspection PyUnresolvedReferences
-from app import app
+# from app import app
 from models import db, Cupcake
 
 db.drop_all()
