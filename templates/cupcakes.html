@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,37 @@
     <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
     <title>Document</title>
 </head>
-<body id="container" >
+
+<body id="container">
     <h1>Cupcakes!</h1>
 
-<div class="container">
-    <div class="row" id="cupcake-section">
+    <div class="container">
+        <div class="row" id="cupcake-section">
 
+        </div>
+
+        <form id="cupcake-form">
+            <h4>Add a Cupcake!</h4>
+
+            <div>
+                <label for="cupcake-flavor">Flavor</label>
+                <input name="cupcake-flavor" type="text" id="cupcake-flavor">
+            </div>
+            <div>
+                <label for="cupcake-size">Size</label>
+                <input name="cupcake-size" type="text" id="cupcake-size">
+            </div>
+            <div>
+                <label for="cupcake-rating">Rating</label>
+                <input name="cupcake-rating" type="text" id="cupcake-rating">
+            </div>
+            <div>
+                <label for="cupcake-image">Image</label>
+                <input name="cupcake-image" type="URL" id="cupcake-image">
+            </div>
+            <button type="submit">Add Cupcake</button>
+        </form>
     </div>
-
-    <form
-        action="#"
-        id="cupcake-form"
-        method="post">
-        <h4>Add a Cupcake!</h4>
-
-        <div>
-            <label for="cupcake-flavor">Flavor</label>
-            <input name ="cupcake-flavor" type="text" id="cupcake-flavor">
-        </div>
-        <div>
-            <label for="cupcake-size">Size</label>
-            <input name ="cupcake-size" type="text" id="cupcake-size">
-        </div>
-        <div>
-            <label for="cupcake-rating">Rating</label>
-            <input name ="cupcake-rating" type="text" id="cupcake-rating">
-        </div>
-        <div>
-            <label for="cupcake-image">Image</label>
-            <input name ="cupcake-image" type="URL" id="cupcake-image">
-        </div>
-        <button type="submit">Add Cupcake</button>
-    </form>
-</div>
 </body>
 
 <script src="https://unpkg.com/jquery"></script>
